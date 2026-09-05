@@ -78,3 +78,7 @@ section{max-width:850px}
 aside .nav a:not(.side-category) { display:none !important; }
 .sidebar .side-category,
 aside .side-category { display:block !important; }
+
+/* V15 - exact clean sidebar */
+#sidebar > a:not(.side-category) { display:none !important; }
+#sidebar .side-category { display:block !important; }
