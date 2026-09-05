@@ -89,3 +89,220 @@ aside .side-category { display:block !important; }
 .future .cards {
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 }
+
+
+/* =========================================================
+   V17 — MOBILE / TABLET RESPONSIVE LAYOUT
+   ========================================================= */
+
+html, body { max-width:100%; overflow-x:hidden; }
+img { max-width:100%; height:auto; }
+* { box-sizing:border-box; }
+
+/* Tablet */
+@media (max-width: 900px) {
+  .layout,
+  .page,
+  .app,
+  .content-wrap {
+    width:100%;
+    max-width:100%;
+  }
+
+  main {
+    width:100%;
+    max-width:100%;
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  .rule-hero,
+  .hero {
+    width:100%;
+  }
+
+  .future .category-grid,
+  .future .future-grid,
+  .future .cards {
+    grid-template-columns:1fr !important;
+  }
+}
+
+/* Phones */
+@media (max-width: 700px) {
+  body {
+    font-size:15px;
+  }
+
+  /* Sidebar becomes an off-canvas mobile menu rather than stealing screen width. */
+  #sidebar,
+  .sidebar,
+  aside {
+    position:fixed !important;
+    top:0;
+    left:-100%;
+    width:min(82vw, 320px) !important;
+    height:100dvh;
+    z-index:9999;
+    overflow-y:auto;
+    transition:left .22s ease;
+    box-shadow:8px 0 30px rgba(0,0,0,.35);
+  }
+
+  #sidebar.open,
+  .sidebar.open,
+  aside.open {
+    left:0 !important;
+  }
+
+  main,
+  .main,
+  .content,
+  .main-content {
+    margin-left:0 !important;
+    width:100% !important;
+    max-width:100% !important;
+    padding:14px !important;
+  }
+
+  header,
+  .topbar,
+  .header {
+    padding-left:12px !important;
+    padding-right:12px !important;
+  }
+
+  /* Welcome / section headers */
+  .hero,
+  .welcome-hero,
+  .rule-hero {
+    flex-direction:column !important;
+    align-items:flex-start !important;
+    gap:12px !important;
+    padding:18px !important;
+    margin:16px 0 20px !important;
+  }
+
+  .hero img,
+  .welcome-hero img,
+  .rule-hero img {
+    width:78px !important;
+    height:78px !important;
+    object-fit:contain;
+  }
+
+  .hero h1,
+  .welcome-hero h1,
+  .rule-hero h1 {
+    font-size:clamp(22px, 7vw, 30px) !important;
+    line-height:1.12 !important;
+    overflow-wrap:anywhere;
+  }
+
+  .hero p,
+  .welcome-hero p,
+  .rule-hero p {
+    font-size:14px !important;
+    line-height:1.5;
+  }
+
+  h1 { font-size:clamp(24px, 8vw, 34px); }
+  h2 { font-size:clamp(20px, 6vw, 27px); line-height:1.25; }
+  h3 { font-size:18px; }
+
+  /* Rule category cards stack vertically */
+  .future {
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+
+  .future .category-grid,
+  .future .future-grid,
+  .future .cards {
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:10px !important;
+  }
+
+  .category-card,
+  .future a,
+  .future .card {
+    width:100% !important;
+    min-width:0 !important;
+  }
+
+  /* Rules / notices fit the viewport */
+  section,
+  .rule-section,
+  .rules-notice,
+  .coming-soon-note {
+    max-width:100% !important;
+    overflow-wrap:anywhere;
+  }
+
+  .rules-notice {
+    padding:15px !important;
+    margin:18px 0 24px !important;
+  }
+
+  ul, ol {
+    padding-left:24px;
+  }
+
+  li {
+    margin-bottom:7px;
+  }
+
+  /* Discord dropdown is usable on a phone */
+  .discord-dropdown,
+  .discord-menu,
+  .dropdown-menu {
+    max-width:calc(100vw - 24px) !important;
+  }
+
+  .discord-dropdown a,
+  .discord-menu a,
+  .dropdown-menu a {
+    white-space:normal !important;
+  }
+
+  /* Sidebar's three category buttons remain easy to tap */
+  .side-category {
+    min-height:58px;
+    padding:12px !important;
+    line-height:1.35 !important;
+  }
+
+  .side-rule-logo {
+    width:30px !important;
+    height:30px !important;
+  }
+
+  .rules-footer {
+    padding-left:8px;
+    padding-right:8px;
+    line-height:1.5;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 390px) {
+  main,
+  .main,
+  .content,
+  .main-content {
+    padding:10px !important;
+  }
+
+  .hero,
+  .welcome-hero,
+  .rule-hero {
+    padding:14px !important;
+  }
+
+  .hero h1,
+  .welcome-hero h1,
+  .rule-hero h1 {
+    font-size:22px !important;
+  }
+}
