@@ -25,3 +25,14 @@ section{max-width:850px}
 .category-card:hover{background:#252525;border-color:#444}
 .category-card span{margin-left:auto;color:#777;font-size:12px}
 #business-rules{scroll-margin-top:90px}
+
+.side-category{display:block;color:#eee;text-decoration:none;font-weight:700;line-height:1.55}
+.side-category:hover{background:#292929}
+.rule-hero{display:flex;align-items:center;gap:24px;background:linear-gradient(145deg,#1d1d1d,#181818);border:1px solid #303030;border-radius:12px;padding:20px 24px;margin:25px 0 28px}
+.rule-hero img{width:125px;height:125px;object-fit:contain}
+.rule-hero h1{margin:0 0 8px;font-size:32px}
+.rule-hero p{margin:0;color:#aaa;font-size:17px}
+.prepared-section{scroll-margin-top:90px}
+#business-rules{scroll-margin-top:90px}
+.coming-soon-note{border:1px dashed #3b3b3b;background:#1b1b1b;border-radius:9px;padding:18px;color:#999}
+@media(max-width:650px){.rule-hero{gap:15px;padding:16px}.rule-hero img{width:85px;height:85px}.rule-hero h1{font-size:24px}.rule-hero p{font-size:14px}}
