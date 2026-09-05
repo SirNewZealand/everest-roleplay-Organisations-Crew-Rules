@@ -462,3 +462,13 @@ img { max-width:100%; height:auto; }
     height:90px !important;
   }
 }
+
+/* V20 Server Guidelines */
+.server-guidelines-content{margin-top:22px}
+.guideline-block{padding:18px 20px;margin:0 0 14px;background:#1b1b1b;border:1px solid #303030;border-radius:10px}
+.guideline-block h3{margin:0 0 12px;font-size:19px}
+.guideline-block ul{margin:0;padding-left:22px}
+.guideline-block li{margin:0 0 9px;line-height:1.6;color:#c7c7c7}
+.guideline-block li:last-child{margin-bottom:0}
+.rule-example{display:inline-block;margin-top:5px;color:#aaa}
+@media(max-width:700px){.guideline-block{padding:15px 14px}.guideline-block h3{font-size:18px;line-height:1.3}.guideline-block ul{padding-left:20px}.guideline-block li{font-size:14px;line-height:1.55}}
