@@ -36,3 +36,8 @@ section{max-width:850px}
 #business-rules{scroll-margin-top:90px}
 .coming-soon-note{border:1px dashed #3b3b3b;background:#1b1b1b;border-radius:9px;padding:18px;color:#999}
 @media(max-width:650px){.rule-hero{gap:15px;padding:16px}.rule-hero img{width:85px;height:85px}.rule-hero h1{font-size:24px}.rule-hero p{font-size:14px}}
+
+.welcome-hero img{width:125px;height:125px;object-fit:contain;border-radius:12px}
+.welcome-hero h1{letter-spacing:.5px}
+.side-rule-logo{width:28px;height:28px;object-fit:cover;border-radius:50%;vertical-align:middle;margin-right:8px}
+.org-rule-hero{scroll-margin-top:90px}
