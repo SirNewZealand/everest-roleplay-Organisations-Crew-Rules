@@ -72,3 +72,9 @@ section{max-width:850px}
   color:#858585;
   font-size:13px;
 }
+
+/* V14: sidebar simplified to category buttons only */
+.sidebar .nav a:not(.side-category),
+aside .nav a:not(.side-category) { display:none !important; }
+.sidebar .side-category,
+aside .side-category { display:block !important; }
