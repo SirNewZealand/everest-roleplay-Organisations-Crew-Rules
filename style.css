@@ -1,1 +1,27 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#171717;color:#e9e9e9;font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.65}header{height:74px;position:sticky;top:0;z-index:20;background:#1d1d1d;border-bottom:1px solid #333;display:flex;align-items:center;padding:0 28px}.brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:17px}.brand img{width:44px;height:44px;object-fit:contain}.top{margin-left:auto;display:flex;gap:18px;align-items:center}.top input{width:260px;background:#292929;border:1px solid #3b3b3b;border-radius:8px;color:#fff;padding:11px 13px;outline:none}.top a{color:#ddd;text-decoration:none}.layout{display:grid;grid-template-columns:300px minmax(0,900px);justify-content:center;gap:46px}.layout aside{height:calc(100vh - 74px);position:sticky;top:74px;overflow:auto;padding:28px 18px;border-right:1px solid #303030}.side-title{font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#fff;margin:0 10px 15px}.layout aside a{display:block;color:#bcbcbc;text-decoration:none;padding:9px 12px;border-radius:7px;font-size:14px}.layout aside a:hover,.layout aside a.active{background:#292929;color:#fff}main{padding:42px 28px 100px;min-width:0}.hero{display:flex;align-items:center;gap:25px;padding:18px 0 38px;border-bottom:1px solid #2e2e2e}.hero img{width:125px;height:125px;object-fit:contain}.hero h1{font-size:32px;margin:0}.hero p{margin:4px 0;color:#aaa;font-size:18px}section{padding:38px 0 22px;border-bottom:1px solid #2b2b2b;scroll-margin-top:95px}h2{font-size:25px;color:#fff;margin:0 0 18px}p{color:#d0d0d0}ul{padding-left:24px}li{margin:10px 0;color:#d0d0d0}strong{color:#ededed}#menu{display:none;background:none;border:0;color:white;font-size:23px;margin-right:12px}#noResults{display:none;padding:30px 0;color:#aaa}@media(max-width:800px){header{padding:0 12px}.brand span{font-size:14px}.top a{display:none}.top input{width:145px}.layout{display:block}.layout aside{position:fixed;z-index:15;top:74px;left:-310px;width:300px;background:#1b1b1b;transition:.2s}.layout aside.open{left:0}#menu{display:block}main{padding:28px 20px}.hero img{width:90px;height:90px}.hero h1{font-size:26px}}
+/* Everest V2 documentation styling */
+body{background:#151515}
+header{box-shadow:0 1px 0 #111}
+.layout aside{background:#191919}
+.side-home{display:block;color:#eee;text-decoration:none;padding:11px 12px;margin-bottom:18px;border-radius:7px;background:#232323;font-weight:650}
+.side-home:hover{background:#2d2d2d}
+.side-section{font-size:11px;letter-spacing:.12em;color:#777;font-weight:800;margin:4px 12px 9px}
+.side-title{padding:10px 12px;background:#202020;border-radius:7px;margin-bottom:6px}
+.doc-kicker{font-size:11px;letter-spacing:.16em;color:#777;font-weight:800;margin-bottom:12px}
+.hero{background:linear-gradient(145deg,#1d1d1d,#181818);border:1px solid #2c2c2c;border-radius:12px;padding:25px!important;margin-bottom:10px}
+.hero h1{font-size:36px!important}
+section h2{letter-spacing:-.02em}
+section{max-width:850px}
+.future{margin-top:35px!important}
+.future-intro{color:#888}
+.category-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.category-grid div{display:flex;gap:9px;align-items:center;border:1px solid #303030;background:#1d1d1d;border-radius:9px;padding:16px}
+.category-grid span{margin-left:auto;color:#777;font-size:12px}
+@media(max-width:800px){.category-grid{grid-template-columns:1fr}}
+
+.discord-menu{position:relative}.discord-trigger{background:transparent;border:0;color:#ddd;font:inherit;padding:9px 11px;cursor:pointer;border-radius:7px}.discord-trigger:hover{background:#292929}.discord-dropdown{display:none;position:absolute;right:0;top:43px;width:330px;padding:8px;background:#202020;border:1px solid #383838;border-radius:12px;box-shadow:0 18px 45px #0009;z-index:100}.discord-menu.open .discord-dropdown{display:block}.discord-dropdown a{display:flex;align-items:center;gap:12px;padding:9px;text-decoration:none;color:#eee;border-radius:8px}.discord-dropdown a:hover{background:#2b2b2b}.discord-dropdown img{width:42px;height:42px;object-fit:contain}.discord-dropdown span{display:flex;flex-direction:column}.discord-dropdown small{color:#888;font-size:11px}@media(max-width:800px){.discord-dropdown{position:fixed;left:12px;right:12px;top:68px;width:auto;max-height:80vh;overflow:auto}}
+
+.category-card{display:flex;gap:9px;align-items:center;border:1px solid #303030;background:#1d1d1d;border-radius:9px;padding:16px;color:inherit;text-decoration:none}
+.category-card:hover{background:#252525;border-color:#444}
+.category-card span{margin-left:auto;color:#777;font-size:12px}
+#business-rules{scroll-margin-top:90px}
