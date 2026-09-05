@@ -41,3 +41,6 @@ section{max-width:850px}
 .welcome-hero h1{letter-spacing:.5px}
 .side-rule-logo{width:28px;height:28px;object-fit:cover;border-radius:50%;vertical-align:middle;margin-right:8px}
 .org-rule-hero{scroll-margin-top:90px}
+
+/* V10: Search rules removed */
+.search, .search-box, .search-wrap, #search, #ruleSearch, input[placeholder*="Search rules"] { display:none !important; }
